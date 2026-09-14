@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Habib | Creative Director & Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="loading">
+    <!-- Cinematic Preloader -->
+    <div class="preloader">
+        <div class="preloader-text">ALI HABIB<span>.</span></div>
+    </div>
+
+    <!-- Film Grain Overlay -->
+    <div class="noise-overlay"></div>
+    
+    <!-- Custom Interactive Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="editorial-nav reveal-down">
+        <div class="logo">A.H.<span>.</span></div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="#work" data-hover="link">Work</a>
+                <a href="#services" data-hover="link">Services</a>
+                <a href="https://www.instagram.com/alihabib.5/" target="_blank" data-hover="link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- Dynamic Theme Toggle: System / Light / Dark -->
+            <div class="theme-switcher" data-hover="link">
+                <button class="theme-btn active" data-theme-val="system" title="System Theme">Sys</button>
+                <button class="theme-btn" data-theme-val="light" title="Light Theme"><i class="fas fa-sun"></i></button>
+                <button class="theme-btn" data-theme-val="dark" title="Dark Theme"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- MINIMALIST HERO WITH INTERACTIVE CONTACT CAPSULE -->
+        <section class="hero-minimal">
+            <div class="hero-container">
+                <div class="hero-intro reveal-up delay-1">
+                    <span class="status-dot"></span> Available for Select Projects
+                </div>
+                
+                <h1 class="hero-headline reveal-up delay-2">
+                    Crafting <span class="italic-serif">cinematic frames</span> <br>
+                    & digital <span class="outline-hover" data-hover="text">architectures</span>.
+                </h1>
+
+                <!-- Animated Expandable Contact Capsule ("Enter your email address") -->
+                <div class="hero-contact-wrapper reveal-up delay-25">
+                    <form class="contact-capsule" id="contactForm" onsubmit="handleContact(event)">
+                        <div class="capsule-icon"><i class="fas fa-envelope"></i></div>
+                        <input type="email" placeholder="Enter your email address..." required id="emailInput" data-hover="text">
+                        <button type="submit" class="capsule-submit" data-hover="link">
+                            <span>Let's Talk</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                    <div class="success-msg" id="successMsg">Message received. Let's create something extraordinary.</div>
+                </div>
+
+                <div class="hero-footer reveal-up delay-3">
+                    <div class="roles-badge">
+                        <span>Filmmaker</span>
+                        <span>•</span>
+                        <span>Director & DOP</span>
+                        <span>•</span>
+                        <span>Developer</span>
+                    </div>
+                    <div class="hero-scroll-hint">
+                        <span>Scroll to explore</span>
+                        <div class="scroll-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPEN TO WORK / SERVICES SECTION -->
+        <section id="services" class="services-minimal reveal-up">
+            <div class="container">
+                <div class="section-header-flex">
+                    <p class="section-tag">01 / Expertise & Scope</p>
+                    <h2 class="section-title">Open to Work</h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-hover="card">
+                        <span class="service-num">01</span>
+                        <h3>Fashion Films</h3>
+                        <p>High-aesthetic visual storytelling and movement-driven narratives.</p>
+                    </div>
+                    <div class="service-card" data-hover="card">
+                        <span class="service-num">02</span>
+                        <h3>TVC & Commercials</h3>
+                        <p>Compelling brand campaigns designed to captivate and convert.</p>
+                    </div>
+                    <div class="service-card" data-hover="card">
+                        <span class="service-num">03</span>
+                        <h3>Music Videos</h3>
+                        <p>Rhythmic, atmospheric direction bridging sound and striking cinematography.</p>
+                    </div>
+                    <div class="service-card" data-hover="card">
+                        <span class="service-num">04</span>
+                        <h3>Documentaries</h3>
+                        <p>Deeply human, grounded investigative and profile filmmaking.</p>
+                    </div>
+                    <div class="service-card" data-hover="card">
+                        <span class="service-num">05</span>
+                        <h3>Short Films</h3>
+                        <p>Immersive narrative fiction exploring raw human dynamics.</p>
+                    </div>
+                    <div class="service-card" data-hover="card">
+                        <span class="service-num">06</span>
+                        <h3>Editorial Campaigns</h3>
+                        <p>Static and motion visual curation for luxury publications and brands.</p>
+                    </div>
+                    <div class="service-card full-width" data-hover="card">
+                        <span class="service-num">07</span>
+                        <h3>Cinematic Weddings</h3>
+                        <p>Preserving timeless celebrations through an artistic, documentary lens.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrolling Marquee for Tech & Craft -->
+        <div class="marquee-container reveal-up">
+            <div class="marquee-content">
+                <span>HTML/CSS/JS</span> • <span>Python/Flask</span> • <span>DaVinci Resolve Color Grading</span> • <span>Typography Engineering</span> • <span>Figma</span> • 
+                <span>HTML/CSS/JS</span> • <span>Python/Flask</span> • <span>DaVinci Resolve Color Grading</span> • <span>Typography Engineering</span> • <span>Figma</span> •
+            </div>
+        </div>
+
+        <!-- Logo Marquee -->
+        <div class="logo-marquee-container reveal-up">
+            <p class="marquee-label">Collaborations & Affiliations</p>
+            <div class="logo-marquee">
+                <div class="logo-track">
+                    <img src="assets/Siat logo.png" alt="SIAT" class="client-logo">
+                    <img src="assets/gcu Layer 2.png" alt="GCU" class="client-logo">
+                    <img src="assets/Logo.pdf.png" alt="Pace 2 Life" class="client-logo">
+                    <img src="assets/dlhs.png" alt="Dr. Leitner" class="client-logo">
+                    <img src="assets/rizviz.png" alt="Rizviz" class="client-logo">
+                    <img src="assets/GCMUN_lOGO-removebg-preview.png" alt="GCMUN" class="client-logo">
+                    <img src="assets/stationery by LUCKY.png" alt="Lucky" class="client-logo">
+                    <img src="assets/amfas.jpg" alt="Portrait" class="client-logo">
+
+                    <img src="assets/Siat logo.png" alt="SIAT" class="client-logo">
+                    <img src="assets/gcu Layer 2.png" alt="GCU" class="client-logo">
+                    <img src="assets/Logo.pdf.png" alt="Pace 2 Life" class="client-logo">
+                    <img src="assets/dlhs.png" alt="Dr. Leitner" class="client-logo">
+                    <img src="assets/rizviz.png" alt="Rizviz" class="client-logo">
+                    <img src="assets/GCMUN_lOGO-removebg-preview.png" alt="GCMUN" class="client-logo">
+                    <img src="assets/stationery by LUCKY.png" alt="Lucky" class="client-logo">
+                    <img src="assets/amfas.jpg" alt="Portrait" class="client-logo">
+                </div>
+            </div>
+        </div>
+
+        <!-- SELECTED EXPERIENCE -->
+        <section id="work" class="projects-editorial">
+            <div class="container">
+                <div class="section-header-flex">
+                    <p class="section-tag">02 / Track Record</p>
+                    <h2 class="section-title">Selected Experience</h2>
+                </div>
+                
+                <!-- Experience 01 -->
+                <div class="project-row reveal-up" data-hover="project">
+                    <div class="project-number">01</div>
+                    <div class="project-details">
+                        <h3>KASHKOL (کشکول)</h3>
+                        <h4 class="role-title">Editor-in-Chief</h4>
+                        <p>An independent literary magazine dedicated to publishing new writers and preserving classical literary heritage.</p>
+                    </div>
+                    <div class="project-category">Editorial / Publishing</div>
+                </div>
+
+                <!-- Experience 02 -->
+                <div class="project-row reveal-up" data-hover="project">
+                    <div class="project-number">02</div>
+                    <div class="project-details">
+                        <h3>Ali Habib Productions</h3>
+                        <h4 class="role-title" style="margin-bottom: 3rem;">Director / Creative Producer</h4>
+                        
+                        <!-- Film 1 -->
+                        <div class="production-work">
+                            <h5 class="film-title">Film: The Unstoppables</h5>
+                            <div class="media-split">
+                                <p>Directed, shot (DOP), and edited the documentary film, premiered at the University College London (UCL) Inclusivity Department. Chronicles over 20 years of work supporting differently-abled communities across Pakistan.</p>
+                                <div class="poster-container">
+                                    <img src="assets/The Unstoopables.jpg" alt="The Unstoppables Film Poster" class="film-poster">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Film 2 -->
+                        <div class="production-work">
+                            <h5 class="film-title">Doc: The Making of Sona Chandi</h5>
+                            <div class="media-split">
+                                <p>Produced in collaboration with the Syed Imtiaz Ali Taj (SIAT) Society for Dramatics, documenting behind-the-scenes theatrical stagecraft.</p>
+                                <div class="poster-container">
+                                    <img src="assets/Screenshot 2026-09-14 041142.png" alt="Sona Chandi Poster" class="film-poster">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Film 3 -->
+                        <div class="production-work last-work">
+                            <h5 class="film-title">Doc: The Making of Toya</h5>
+                            <div class="media-split">
+                                <p>Behind-the-scenes documentary covering the Punjabi play <em>Toya</em>, highlighting social critique through theatrical performance.</p>
+                                <div class="poster-container">
+                                    <img src="assets/toya.png" alt="Toya Poster" class="film-poster">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-category">Film Production</div>
+                </div>
+
+                <!-- Experience 03 -->
+                <div class="project-row reveal-up" data-hover="project">
+                    <div class="project-number">03</div>
+                    <div class="project-details">
+                        <h3>Dr. Leitner History Foundation</h3>
+                        <h4 class="role-title">Visual Designer & Media Creator</h4>
+                        <p>Spearheaded visual identity, designing posters and cinematic video coverage for historical landmark preservation initiatives.</p>
+                    </div>
+                    <div class="project-category">Design / Media</div>
+                </div>
+
+                <!-- Experience 04 -->
+                <div class="project-row reveal-up" data-hover="project">
+                    <div class="project-number">04</div>
+                    <div class="project-details">
+                        <h3>Rizviz International Impex</h3>
+                        <h4 class="role-title">AI Intern (Promoted from ServiceNow)</h4>
+                        <p>Transitioned from workflow automation engineering in ServiceNow to developing AI model integrations and operational tooling.</p>
+                    </div>
+                    <div class="project-category">Engineering / AI</div>
+                </div>
+
+                <!-- Experience 05 -->
+                <div class="project-row reveal-up" data-hover="project">
+                    <div class="project-number">05</div>
+                    <div class="project-details">
+                        <h3>Photojournalism</h3>
+                        <h4 class="role-title">Independent Photographer & Curator</h4>
+                        <p>Curating award-winning architectural and landscape photography on <a href="https://www.instagram.com/alihabib.5/" target="_blank" class="inline-link">@alihabib.5</a> with advanced color grading workflows.</p>
+                    </div>
+                    <div class="project-category">Photography</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Live Gallery Feed -->
+        <section class="projects-editorial reveal-up" style="padding-top: 2rem; padding-bottom: 8rem;">
+            <div class="container">
+                <div class="section-header-flex">
+                    <p class="section-tag">03 / Visual Feed</p>
+                    <h2 class="section-title">Live Gallery</h2>
+                </div>
+                <p style="opacity: 0.5; margin-bottom: 3rem; font-size: 0.9rem;">Latest cinematic compositions from <a href="https://www.instagram.com/alihabib.5/" target="_blank" class="inline-link">@alihabib.5</a></p>
+                
+                <div class="instagram-container">
+                    <script src="https://elfsightcdn.com/platform.js" async></script>
+                    <div class="elfsight-app-210f4444-8bf1-4ebd-b48f-a6875715a271" data-elfsight-app-lazy></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
