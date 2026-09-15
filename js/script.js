@@ -61,24 +61,16 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () 
     }
 });
 
-// 3. Contact Form Submission (Redirect to Gmail Compose)
-function handleContact(e) {
-    e.preventDefault();
-    const input = document.getElementById('emailInput');
-    const emailValue = input.value.trim();
-    
-    if (emailValue !== '') {
+// 3. Contact Action (Direct to Gmail Compose)
+const letsTalkBtn = document.getElementById('letsTalkBtn');
+if (letsTalkBtn) {
+    letsTalkBtn.addEventListener('click', () => {
         const recipient = "alihabibproductions@gmail.com";
         const subject = encodeURIComponent("Request for Services");
-        const body = encodeURIComponent("Hello Ali,\n\nI am reaching out regarding potential project collaboration.\n\nFrom: " + emailValue);
-        
-        // Open Gmail compose URL directly in a new tab
-        const gmailUrl = `https://mail.google.com/mail/?view=cm&to=${recipient}&su=${subject}&body=${body}&from=${encodeURIComponent(emailValue)}`;
-        window.open(gmailUrl, '_blank');
-        
-        input.value = '';
-        input.blur();
-    }
+        const body = encodeURIComponent("Hey Ali,\n\nI am reaching out regarding a collaboration project. Please let me know your availability so we can proceed further.");
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${subject}&body=${body}`;
+        letsTalkBtn.setAttribute('href', gmailUrl);
+    });
 }
 
 // 4. Custom Cursor Logic
